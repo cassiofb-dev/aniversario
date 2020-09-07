@@ -19,11 +19,21 @@
       #page {
         padding-top: 10vh;
       }
+      #video {
+        display: none;
+        width: 80vw;
+        height: 45vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        border-radius: 5%;
+        border: 1px solid black;
+      }
     </style>
     <div id="page">
       <h2 id="status"></h2>
       <h1 id="result"></h1>
       <h2 id="person"></h2>
+      <iframe id="video" src="https://www.youtube.com/embed/ei2-RjJDBHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </body>
   <script>
@@ -44,6 +54,7 @@
         document.getElementById("result").innerText = "Feliz Aniversário Marcelo!";
         document.getElementById("status").innerText = "";
         document.getElementById("person").innerText = "";
+        video.style.display = 'inline';
       }
     }, 1000);
   </script>
